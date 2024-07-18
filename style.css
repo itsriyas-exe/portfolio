@@ -1,0 +1,276 @@
+
+*{
+   
+    font-family: "Noto Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+#navbar{
+    display: flex; /* to make child element to inline */
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between; /* to make space between two elements */
+    align-items: center; /* Vertically align center  - (Justify content) for horizontally aligning*/ 
+}
+#logo{
+    width: 130px;
+}
+.listitem{
+    list-style: none; /* to remove the styling of list item */
+    display: inline; /* to inline single item */
+    margin: 10px 20px;
+    font-weight: bold; /* to increase text boldness */
+    font-size: 18px;
+    
+}
+.listitem a{
+    text-decoration: none; /* remove underlines */
+}
+.listitem a:hover{
+    
+    color: red;
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.title h1{
+    margin-bottom: 30px;
+}
+.title button{
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(0, 174, 3);
+}
+.title button:hover{
+    color: darkgreen;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+    right: 30px;
+    
+}
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#bhead{
+   text-align: center;
+   margin-top: 230px;
+}
+#about{
+    font-size: 24px;
+}
+#p1{
+    color: green;
+    font-size: 16px;
+}
+#bgimage{
+   margin-left: 85px;
+   margin-top: 20px;
+   
+}
+#pcontent{
+    
+    margin-left: 900px;
+    margin-right: 100px;
+    margin-top: -400px;
+
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem; */
+ 
+}
+#pcontent #p2{
+
+    color: rgb(42, 42, 42);
+    text-align: justify;
+    font-size: 20px;
+
+}
+#d1 #bp1{
+    display: inline;
+    margin-left: 10px;
+    font-size: 20px;
+   
+}
+#d2 #bp2{
+    display: inline;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#d3 #bp3{
+    display: inline;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#d4 #bp4{
+    display: inline;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#d1{
+    margin-bottom: 10px;
+   
+}
+#d2{
+    margin-bottom: 10px;
+}
+#d3{
+    margin-bottom: 10px;
+}
+#d4 {
+    margin-bottom: 10px;
+}
+.heading{
+    margin-top: 210px;
+    text-align: center;
+    font-size: 24px;
+}
+.heading #skill_p1{
+    color: green;
+    font-size: 16px;
+}
+#skills{
+    margin: 8% 8% 30px 8%;
+}
+.skill_content{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    }
+    .skill_image img{
+        width: 90%;
+    }
+    .progress_bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        position: relative;
+    }
+    .progress_bar span{
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .bar{
+        width: 90%;
+        height: 0.5rem;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0px;
+    }
+    #html_bar{
+        width: 85%;
+        background-color: orange;
+    }
+    #css_bar{
+        width: 78%;
+        background-color: orange;
+    }
+    #js_bar{
+        width: 79%;
+        background-color: orange;
+    }
+    #react_bar{
+        width: 75%;
+        background-color: orange;
+    }
+    .contact{
+        margin-top: 5%;
+    }
+    .contact_head{
+            text-align: center;
+            font-size: 24px;
+    }
+    .contact_head #my_contacts{
+        color: green;
+        font-size: 16px;
+    }
+    .icon_set{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        margin-bottom: 20px;
+    }
+    .contacts, .uparrow{
+        width: 50px;
+        height: 50px;
+        margin: 0px 13px 5px;
+        display: flex;
+        justify-content: center; /* horizontally center */
+        align-items: center;  /* vertically center */
+        border-radius: 50%;
+    }
+    .contacts i {
+            color: black;
+            
+    }
+    .contacts:hover{
+        background-image: linear-gradient(to bottom right,rgb(255, 255, 27),rgb(255, 118, 5));
+    }
+    .contacts:hover i{
+        color: white;
+        animation: shake 0.5s;
+    }
+    @keyframes shake{
+        10%{
+            transform: rotate(15deg);
+        }
+        20%{
+            transform: rotate(-15deg);
+        }
+        30%{
+            transform: rotate(15deg);
+
+        }
+        40%{
+            transform: rotate(-15deg);
+        }
+
+    }
+    footer{
+        padding: 3rem 0px;
+    }
+    footer p{
+        font-size: 17px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .uparrow{
+        background-image: linear-gradient(to bottom right,rgb(255, 255, 27),rgb(255, 118, 5));
+        float: right;
+        margin: 13px 50px 50px 0px;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
