@@ -32,7 +32,7 @@
 }
 .listitem a{
     text-decoration: none; /* remove underlines */
-    color:darkgrey;
+    color: black;
 }
 .listitem a:hover{
     
